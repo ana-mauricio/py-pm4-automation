@@ -30,6 +30,7 @@ tags
 
 # Unittest and coverage
 htmlcov/*
+test_results/*
 .coverage
 .tox
 junit.xml
@@ -48,3 +49,4 @@ MANIFEST
 
 # Per-project virtualenvs
 .venv*/
+venv*/

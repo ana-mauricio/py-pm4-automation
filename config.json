@@ -1,6 +1,0 @@
-[
-  {
-    "name": "test-create-user",
-    "path": "setup.py test"
-  }
-]
