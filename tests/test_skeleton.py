@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-from py_pm4_automation.skeleton import fib
+from skeleton import fib
 from unittest import TestLoader, TestSuite, TestCase
 # from HtmlTestRunner import HTMLTestRunner
 # from admin.test_TCP4_761 import TCP4_761
@@ -15,9 +15,8 @@ __author__ = "amauricio"
 __copyright__ = "amauricio"
 __license__ = "mit"
 
-direct = os.getcwd()
-
 def test_fib():
+    '''pytest basic example'''
     assert fib(1) == 1
     assert fib(2) == 1
     assert fib(7) == 13
@@ -33,11 +32,3 @@ class ClassTest(TestCase):
 
      def test_case_equal(self):
         self.assertTrue(True)
-
-# COMPOSE SUITE
-#example_tests = TestLoader().loadTestsFromTestCase(ClassTest)
-#my_tests = TestLoader().loadTestsFromTestCase(TCP4_761)
-#suite = TestSuite([example_tests])
-#runner = HTMLTestRunner(combine_reports=False, report_name="MyReport", add_timestamp=False, output= direct + '/reports')
-#runner.run(suite)
-

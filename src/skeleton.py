@@ -19,8 +19,6 @@ import argparse
 import sys
 import logging
 
-from py_pm4_automation import __version__
-
 __author__ = "amauricio"
 __copyright__ = "amauricio"
 __license__ = "mit"

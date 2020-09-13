@@ -3,22 +3,22 @@
 # Check if using local environment
 
 from test_parent import BaseTest
-import utils.util
 from page_login import PageLogin
 from page_menu import PageMenu
 from admin.users.page_users import PageUsers
 import pytest
 import unittest
 
-data = {"server_url": "https://release-testing.processmaker.net/", "username": "admin", "password": "admin"}
-
+@pytest.mark.TCP4_761
 @pytest.mark.smoke
+@pytest.mark.usefixtures("data")
 class TCP4_761(BaseTest):
     ''' Test to verify the creation of users with special characters '''
 
     def test_create_user(self):
         ''' Create user with special characters '''
         #Constants
+        data = self.data
         user_data = {}            # To save user data, when you create an user
         user_result_search = None # To save webElement, if the user was found
 
