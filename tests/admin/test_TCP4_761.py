@@ -1,7 +1,5 @@
 #!/usr/local/bin/python3
 
-# Check if using local environment
-
 from test_parent import BaseTest
 from page_login import PageLogin
 from page_menu import PageMenu
