@@ -15,4 +15,6 @@ Config.init_config()
 
 @pytest.fixture
 def data(request):
-    request.cls.data = {"server_url": Config.get("server_url"), "username": Config.get("pm_password"), "password": Config.get("pm_username")}
+    request.cls.data = {"server_url": Config.get("server_url"),
+                        "username": Config.get("pm_username"),
+                        "password": Config.get("pm_password")}
