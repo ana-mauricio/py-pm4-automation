@@ -6,6 +6,9 @@ You can develop and run tests locally. In order to do so, you must have the foll
 
 * [Python 3.6.9](https://www.python.org) or above
 * [Pip](https://pip.pypa.io/en/stable/installing/)
+* [Config virtual env](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/)
+  * Install the virtualenv package: `pip install virtualenv`
+  * Create the virtual environment: `virtualenv mypython`
 * [Chrome](https://www.google.com/chrome/)
 * [ChromeDriver 80.0.3987.106](https://chromedriver.chromium.org/getting-started) or above
 
@@ -22,7 +25,10 @@ You can develop and run tests locally. In order to do so, you must have the foll
   * server_url  = your/pm4/server/url/here
   * pm_username = your/username/here
   * pm_password = your/password/here
-* Navigate to /
+* Activate the virtual environment
+  * MAC OS /Linux: `source mypython/bin/activate`
+  * Windows: `mypthon\Scripts\activate`
+* Navigate to the root of the project
   * Run all tests : `python setup.py test`
   * Run specific test suite annotated: `python setup.py test --addopts -m=[name_annotation]`
 
